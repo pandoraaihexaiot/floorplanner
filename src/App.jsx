@@ -789,7 +789,7 @@ export default function App(){
                     {/* Name */}
                     {pw>30&&ph>18&&<div style={{fontFamily:"'Courier New',monospace",fontSize:Math.min(pw/12,ph/4,10),fontWeight:700,color:r.color,textTransform:"uppercase",textAlign:"center",lineHeight:1.1,overflow:"hidden",textOverflow:"ellipsis",maxWidth:"95%",whiteSpace:ph<30?"nowrap":"normal"}}>{r.name}</div>}
                     {/* Dimensions */}
-                    {pw>40&&ph>35&&<div style={{fontFamily:"'Courier New',monospace",fontSize:Math.max(4,Math.min(pw/16,6)),color:`${r.color}66`,marginTop:1}}>{r.w}'×{r.h}'</div>}
+                    {pw>30&&ph>24&&<div style={{fontFamily:"'Courier New',monospace",fontSize:Math.max(8,Math.min(pw/8,12)),color:`${r.color}88`,marginTop:1,fontWeight:600}}>{r.w}'×{r.h}'</div>}
                     {/* Resize handle */}
                     {isSel&&<div onMouseDown={(e)=>{e.preventDefault();e.stopPropagation();dragRef.current={kind:"element",id:r.id,type:"br",mx:e.clientX,my:e.clientY,ox:r.x,oy:r.y,ow:r.w,oh:r.h};}} style={{position:"absolute",right:-2,bottom:-2,width:10,height:10,background:r.color,borderRadius:2,cursor:"nwse-resize",zIndex:20,border:"1px solid #fff"}}/>}
                   </div>
